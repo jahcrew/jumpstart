@@ -2,24 +2,65 @@
 *{
 background:rgba(0,0,0,.1);
 }
-
-header{
+/* Nav */
+header a {
   font-family: 'Open Sans', sans-serif;
+  color: grey;
 }
 
-.container {
-  display: flex;
-}
-.container li a{
-  display: inline-flex;
+.active {
 
 }
 
 @media only screen and (max-width: 470px) {
-.container .navbar-header  img {
+.nav-container .navbar-header  img {
     display: none;
   }
+}
+/* Jumbotron */
+.jumbo {
+  display: flex;
 
 }
 
-font-family: 'Monoton', cursive;
+.jumbotron.jumbotron-bike {
+  background-image:"./resources/images/jumbotron-bike.jpg";
+
+
+
+}
+
+.container.jumbo-container {
+  display: inline-flex
+  flex-wrap: wrap;
+
+
+}
+
+.container.jumbo-container h1 {
+  font-family: 'Monoton', cursive;
+  text-shadow: 1px 1px black ;
+  color: white;
+  text-align: center;
+}
+.container.jumbo-container p {
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px black ;
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+.btn {
+  display: block;
+}
+.jumbo button {
+  background-color: lightblue;
+  color: white;
+  border-radius: 4px;
+  justify-content: center;
+  margin-top: 50px;
+  /* margin-left: 40px; figure out how to center w/o using margin*/
+  padding: 10px;
+
+}
