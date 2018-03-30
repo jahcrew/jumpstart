@@ -1,0 +1,25 @@
+/*comment this out when complete */
+*{
+background:rgba(0,0,0,.1);
+}
+
+header{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+.container li a{
+  display: inline-flex;
+
+}
+
+@media only screen and (max-width: 470px) {
+.container .navbar-header  img {
+    display: none;
+  }
+
+}
+
+font-family: 'Monoton', cursive;
