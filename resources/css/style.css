@@ -20,21 +20,17 @@ header a {
 /* Jumbotron */
 .jumbo {
   display: flex;
-
 }
 
 .jumbotron.jumbotron-bike {
-  background-image:"./resources/images/jumbotron-bike.jpg";
-
-
-
+  background-image: url("../images/jumbotron-bike.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container.jumbo-container {
   display: inline-flex
   flex-wrap: wrap;
-
-
 }
 
 .container.jumbo-container h1 {
@@ -43,24 +39,30 @@ header a {
   color: white;
   text-align: center;
 }
+
 .container.jumbo-container p {
   font-family: 'Open Sans', sans-serif;
   text-shadow: 1px 1px black ;
   color: white;
   text-align: center;
   flex-wrap: wrap;
-
 }
+
 .btn {
   display: block;
 }
+
 .jumbo button {
   background-color: lightblue;
   color: white;
   border-radius: 4px;
   justify-content: center;
   margin-top: 50px;
-  /* margin-left: 40px; figure out how to center w/o using margin*/
   padding: 10px;
 
+}
+
+/* Projects */
+.featured {
+  display: flex;
 }
