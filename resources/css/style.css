@@ -53,7 +53,7 @@ header a {
 }
 
 .jumbo button {
-  background-color: lightblue;
+  background-color: blue;
   color: white;
   border-radius: 4px;
   justify-content: center;
@@ -63,6 +63,64 @@ header a {
 }
 
 /* Projects */
+.projects {
+
+}
 .featured {
   display: flex;
+  /*The section that describes the documentary and the section that lists the types of projects should each take up a quarter of the screen on large devices and half of the screen on smaller devices.  */
+}
+
+.image-container{
+overflow: hidden;
+
+}
+
+.image-container img {
+  opacity: 0.75;
+  transition:  transform 0.5s, opacity 0.5s;
+
+
+}
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  /*scale of imgs increases with mouse hover */
+}
+.three_projects {
+  display: inline-flex;
+  flex-direction: column;
+/* Each project should take up a third of the screen on large devices and the whole screen on smaller devices */
+}
+.three_projects img {
+
+}
+
+
+/* Having Trouble */
+
+.trouble {
+  display: inline-block;
+  /* flex-wrap: wrap; */
+}
+
+
+.text{
+text-align: center;
+}
+
+.learn{
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.trouble button{
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 10px;
+
 }
