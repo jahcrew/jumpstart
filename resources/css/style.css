@@ -8,16 +8,60 @@ header a {
   color: grey;
 }
 
-.active {
+.container {
 
 }
+
+.container.nav-container {
+  margin-left: 0;
+  /* margin-right: 0; */
+}
+
+.nav.navbar-nav {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+li{
+  padding-right: 5rem;
+
+}
+.navbar-brand {
+  margin-right: 0;
+}
+
+img {
+  margin-left: 50px;
+}
+
+/* To continue building the navigation section:
+
+The first item in the list should have the class active.
+You will need to override the built-in Bootstrap styles for the class active in style.css.
+Include the logo image provided. This image should hide when the browser shrinks. */
+
+/* You can use these two selectors to style the active link:*/
+
+.navbar-default.navbar-nav.active a {
+
+}
+
+.navbar-default.navbar-nav.active a:hover {
+
+}
+/* The logo image should have the following attributes:
+
+<img src="#" class="navbar-brand navbar-right navbar-collapse"> */
+
 
 @media only screen and (max-width: 470px) {
 .nav-container .navbar-header  img {
     display: none;
   }
 }
+
 /* Jumbotron */
+
 .jumbo {
   display: flex;
 }
@@ -25,7 +69,27 @@ header a {
 .jumbotron.jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg");
   background-repeat: no-repeat;
+    /* background-size: cover;
+  background-position: center; */
+}
+
+.jumbotron.jumbotron-flowers {
+  background-image: url("../images/jumbotron-flowers.jpg");
+  background-repeat: no-repeat;
+  /* background-size: cover;
+  background-position: center; */
+}
+
+.jumbotron.jumbotron-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+  /* background-repeat: no-repeat;
   background-size: cover;
+  background-position: center; */
+}
+
+.jumbotron.jumbotron-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
+
 }
 
 .container.jumbo-container {
@@ -59,51 +123,92 @@ header a {
   justify-content: center;
   margin-top: 50px;
   padding: 10px;
-
 }
 
 /* Projects */
-.projects {
 
-}
 .featured {
   display: flex;
-  /*The section that describes the documentary and the section that lists the types of projects should each take up a quarter of the screen on large devices and half of the screen on smaller devices.  */
+  flex-wrap: wrap;
+}
+
+.feat1{
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.feat2{
+  width: 25%;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 
 .image-container{
 overflow: hidden;
-
 }
 
 .image-container img {
   opacity: 0.75;
   transition:  transform 0.5s, opacity 0.5s;
-
-
 }
+
 .image-container img:hover {
   opacity: 1;
   transform: scale(1.3);
   /*scale of imgs increases with mouse hover */
 }
+
 .three_projects {
-  display: inline-flex;
-  flex-direction: column;
-/* Each project should take up a third of the screen on large devices and the whole screen on smaller devices */
-}
-.three_projects img {
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
+.project1 {
+  width: 30%;
+}
 
+.project2 {
+  width: 30%;
+}
+
+.project3  {
+  width: 30%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  /* check this is correct tablet size */
+.feat1{
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+
+.feat2{
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.project1 {
+  width: 100%;
+}
+
+.project2 {
+  width: 100%;
+}
+
+.project3  {
+  width: 100%;
+}
 /* Having Trouble */
 
 .trouble {
   display: inline-block;
   /* flex-wrap: wrap; */
 }
-
 
 .text{
 text-align: center;
@@ -112,8 +217,6 @@ text-align: center;
 .learn{
   display: flex;
   justify-content: center;
-
-
 }
 
 .trouble button{
